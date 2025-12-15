@@ -1,4 +1,4 @@
-
+https://systemweakness.com/defeating-wpa2-enterprise-peap-authentication-418829b8922c
 
 https://notes.incendium.rocks/pentesting-notes/wireless-networks/wpa-enterpise-wpa-mgt
 
