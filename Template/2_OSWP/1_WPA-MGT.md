@@ -1,4 +1,8 @@
 
+
+https://notes.incendium.rocks/pentesting-notes/wireless-networks/wpa-enterpise-wpa-mgt
+
+
 This manual is not very good. I suggest consulting my OSWP exam report as I attacked an WPA MGT network there and documented it nicely.
 
 ### Step 1: Activate monitoring mode
